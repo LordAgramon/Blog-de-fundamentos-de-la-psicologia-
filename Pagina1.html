@@ -8,18 +8,20 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url("Images/Fondo_1.jpg");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
+            background: url("Images/Fondo_1.jpg");
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
             background-size: cover;
             color: white;
+            background-attachment: scroll;
         }
 
+        /* Estilos del encabezado */
         header {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 10vh;
         }
 
         .title {
