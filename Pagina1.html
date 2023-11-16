@@ -6,17 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi blog personal</title>
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
             font-family: Arial, sans-serif;
             background: url("Images/Fondo_1.jpg") no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
             background-size: cover;
-            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             min-height: 100vh;
-            overflow: auto;
-            /* Añade una barra de desplazamiento cuando el contenido sea más largo que el body */
+            padding: 1em;
+            color: white;
         }
 
         header {
