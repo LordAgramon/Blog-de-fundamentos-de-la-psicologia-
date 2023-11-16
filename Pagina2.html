@@ -73,22 +73,7 @@
             background-color: darkblue;
         }
     </style>
-    <script>
-        function lazyLoadImages() {
-            const images = document.querySelectorAll('img[data-src]');
-            images.forEach((img) => {
-                if (img.getBoundingClientRect().top <= window.innerHeight && img.getBoundingClientRect().bottom >= 0 && getComputedStyle(img).display !== 'none') {
-                    img.src = img.dataset.src;
-                    img.classList.add('loaded');
-                    img.removeAttribute('data-src');
-                }
-            });
-        }
 
-        document.addEventListener('DOMContentLoaded', lazyLoadImages);
-        window.addEventListener('scroll', lazyLoadImages);
-        window.addEventListener('resize', lazyLoadImages);
-    </script>
 </head>
 
 <body>
