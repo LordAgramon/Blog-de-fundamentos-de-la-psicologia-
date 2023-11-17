@@ -46,21 +46,18 @@
             justify-content: center;
             align-items: center;
             height: auto;
-            /* Cambiado de 60vh a auto para permitir que el contenedor se ajuste al contenido */
             position: relative;
             margin-bottom: 2em;
-            /* Añadido margen para separar los contenedores de imágenes */
         }
 
         .image-container1 img,
         .image-container2 img,
         .image-container3 img,
         .image-container4 img {
-            max-width: 100%;
-            height: auto;
+            max-width: 300px;
+            height: 300px;
             position: relative;
-            /* Mantenido como relativo para permitir el posicionamiento de la leyenda */
-            /* Eliminados left y bottom */
+            margin: auto;
         }
 
         .image-container1 figcaption,
@@ -68,23 +65,22 @@
         .image-container3 figcaption,
         .image-container4 figcaption {
             position: absolute;
-            bottom: 0;
-            /* Cambiado de valores específicos a 0 para posicionar la leyenda en la parte inferior de la imagen */
-            left: 0;
-            /* Cambiado de valores específicos a 0 para posicionar la leyenda en el lado izquierdo de la imagen */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             color: #000;
             font-size: 15px;
             font-family: 'Times New Roman', Times, serif;
             opacity: 0;
-            text-align: justify;
+            text-align: center;
             transition: opacity 2s;
             background-color: #fff;
             border: 1px solid #000;
             padding: 9px;
-            width: 100%;
-            /* Cambiado de 560px a 100% para que la leyenda se ajuste al ancho de la imagen */
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
         }
-
 
         .center {
             display: flex;
